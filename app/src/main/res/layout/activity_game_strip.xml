@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/game_strip_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GameStripActivity">
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/background_one"
+        android:layout_width="958dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/strip_background" />
+
+    <ImageView
+        android:id="@+id/background_two"
+        android:layout_width="958dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/strip_background" />
+
+</FrameLayout>
