@@ -19,6 +19,7 @@ public class MainScreen extends AppCompatActivity {
 
     }
 
+
     public void clickSetting(android.view.View view){
         backgroundSound.pause();
         startActivity(new Intent(this, Settings.class));

@@ -48,11 +48,11 @@ public class Settings extends AppCompatActivity {
 
     public void clickPlayMusic(View view){
         if(!backgroundSound.isPlaying()){
-            //stopping
+            //stop
             backgroundSound.start();
             playBtn.setBackgroundResource(R.drawable.pause);
         } else{
-            // plaining
+            //play
             backgroundSound.pause();
             playBtn.setBackgroundResource(R.drawable.playmusic);
         }
