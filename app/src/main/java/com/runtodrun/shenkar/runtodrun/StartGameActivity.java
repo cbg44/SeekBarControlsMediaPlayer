@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
 
-public class start_game extends AppCompatActivity{
+public class StartGameActivity extends AppCompatActivity{
     private StartGame startGame;
 
     @Override

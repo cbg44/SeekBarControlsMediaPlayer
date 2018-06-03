@@ -1,33 +1,33 @@
 package com.runtodrun.shenkar.runtodrun;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainScreen extends AppCompatActivity {
+    public static final String ACTION_PLAY = "PLAY";
 
-    private MediaPlayer backgroundSound;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-        backgroundSound = MediaPlayer.create(this, R.raw.scarymusic);
-        backgroundSound.setLooping(true);
-        backgroundSound.start();
-
+        mediaPlayer = MediaPlayer.create(this, R.raw.scarymusic);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
     }
 
-
     public void clickSetting(android.view.View view){
-        backgroundSound.pause();
-        startActivity(new Intent(this, Settings.class));
+        mediaPlayer.pause();
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
     }
 
     public void clickPlay(android.view.View view){
-        backgroundSound.pause();
-        startActivity(new Intent(this,start_game.class));
+        mediaPlayer.pause();
+        Intent intent = new Intent(this, StartGameActivity.class);
+        startActivity(intent);
     }
 
 }
